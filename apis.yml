@@ -1,0 +1,67 @@
+name: Imaginode
+description: >-
+  Browser-based AI creation studio with a node canvas for generating images, videos, voice-overs and LLM outputs.
+  Provides a REST API, a hosted MCP server, and an llms.txt for programmatic and agent-based generation using a shared
+  credit balance.
+url: https://raw.githubusercontent.com/api-evangelist/imaginode/refs/heads/main/apis.yml
+created: '2026-09-03'
+modified: '2026-09-03'
+specificationVersion: '0.21'
+tags:
+  - ai
+  - image generation
+  - video generation
+  - text to speech
+  - mcp
+  - generative ai
+  - llm
+  - creative tools
+apis:
+  - name: Imaginode REST API
+    description: >-
+      REST API to list models and launch/track image and video generations. Endpoints: GET /api/models (unauthenticated
+      catalog & pricing), POST /api/generate, GET /api/generate/status. Uses imk_ bearer-key authentication.
+    humanURL: https://imaginode.ai/docs/api-mcp
+    baseURL: https://imaginode.ai
+    tags:
+      - ai
+      - image generation
+      - video generation
+      - text to speech
+      - mcp
+      - generative ai
+      - llm
+      - creative tools
+    properties:
+      - type: Documentation
+        url: https://imaginode.ai/docs/api-mcp
+      - type: LLMsTxt
+        url: https://imaginode.ai/llms.txt
+  - name: Imaginode MCP Server
+    description: >-
+      Hosted MCP server (Streamable HTTP transport) exposing four tools: list_models, generate_image, generate_video,
+      get_generation_status. Authenticated via Authorization: Bearer imk_ header.
+    humanURL: https://imaginode.ai/docs/api-mcp
+    baseURL: https://imaginode.ai/api/mcp
+    tags:
+      - ai
+      - image generation
+      - video generation
+      - text to speech
+      - mcp
+      - generative ai
+      - llm
+      - creative tools
+    properties:
+      - type: MCPServer
+        url: https://imaginode.ai/api/mcp
+      - type: Documentation
+        url: https://imaginode.ai/docs/api-mcp
+maintainers:
+  - FN: BUSINESSDYNAMITE
+    url: https://imaginode.ai
+generated:
+  by: apis.io/add
+  model: claude-opus-4-8
+  confidence: 96
+  at: '2026-09-03T21:10:07.152Z'
