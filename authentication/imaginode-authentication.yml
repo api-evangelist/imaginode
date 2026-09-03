@@ -1,0 +1,31 @@
+generated: '2026-09-03'
+method: searched
+source: https://imaginode.ai/en/docs/api-mcp
+docs: https://imaginode.ai/en/docs/api-mcp
+note: >-
+  No OpenAPI is published; this profile is read from the provider's API & MCP documentation
+  and confirmed by live unauthenticated probes (POST /api/generate and
+  GET /api/generate/status both return 401 {"error": "Non authentifie"} without a key;
+  GET /api/models and MCP tools/list answer anonymously).
+schemes:
+  - id: api-key-bearer
+    type: http
+    scheme: bearer
+    key_prefix: imk_
+    header: 'Authorization: Bearer imk_...'
+    surfaces:
+      - REST API (POST /api/generate, GET /api/generate/status)
+      - MCP server (https://imaginode.ai/api/mcp, tool calls)
+    description: >-
+      Account API key sent as a bearer token. Keys are created in the user profile under
+      "API keys" (requires a verified email); the imk_ secret is shown only once at creation.
+      At most 5 active keys per account; a key is revocable at any time and stops working
+      immediately. Each key is limited to 10 generations per minute.
+unauthenticated_surfaces:
+  - GET /api/models (model catalog and per-model credit pricing)
+  - MCP tools/list (tool discovery with full inputSchemas)
+oauth: none documented
+key_management:
+  create: user profile, section "API keys" (verified email required)
+  max_active_keys: 5
+  revocation: one click from the profile; immediate

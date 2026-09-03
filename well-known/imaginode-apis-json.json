@@ -1,0 +1,120 @@
+{
+  "aid": "ai.imaginode",
+  "name": "Imaginode",
+  "type": "Index",
+  "description": "Imaginode is an AI creation canvas: images, video, music and voice from 74 models on a single credit balance. The REST API and the hosted MCP server expose the same pipeline as the canvas: the credit cost is returned before every call and a failed generation is refunded automatically.",
+  "image": "https://imaginode.ai/icons-512.png",
+  "tags": [
+    "Artificial Intelligence",
+    "Image Generation",
+    "Video Generation",
+    "Text to Speech",
+    "Generative AI",
+    "Model Context Protocol"
+  ],
+  "created": "2026-08-24",
+  "modified": "2026-09-03",
+  "url": "https://imaginode.ai/apis.json",
+  "specificationVersion": "0.18",
+  "apis": [
+    {
+      "aid": "ai.imaginode:generation",
+      "name": "Imaginode Generation API",
+      "description": "Generate images and videos, list the available models with their credit cost, and poll a job until it completes. Authenticated with an account API key sent as a bearer token.",
+      "image": "https://imaginode.ai/icons-512.png",
+      "humanURL": "https://imaginode.ai/en/docs",
+      "baseURL": "https://imaginode.ai/api",
+      "tags": [
+        "Image Generation",
+        "Video Generation",
+        "Generative AI"
+      ],
+      "properties": [
+        {
+          "type": "Documentation",
+          "url": "https://imaginode.ai/en/docs"
+        },
+        {
+          "type": "Pricing",
+          "url": "https://imaginode.ai/en/pricing"
+        },
+        {
+          "type": "Models",
+          "url": "https://imaginode.ai/api/models"
+        },
+        {
+          "type": "TermsOfService",
+          "url": "https://imaginode.ai/en/terms"
+        }
+      ],
+      "contact": [
+        {
+          "email": "imaginode.ai@gmail.com"
+        }
+      ]
+    },
+    {
+      "aid": "ai.imaginode:mcp",
+      "name": "Imaginode MCP Server",
+      "description": "Hosted Model Context Protocol server, Streamable HTTP and stateless. Exposes list_models, generate_image, generate_video and get_generation_status to any MCP client, billed on the connected account's credits.",
+      "image": "https://imaginode.ai/icons-512.png",
+      "humanURL": "https://imaginode.ai/en/docs",
+      "baseURL": "https://imaginode.ai/api/mcp",
+      "tags": [
+        "Model Context Protocol",
+        "Agents",
+        "Generative AI"
+      ],
+      "properties": [
+        {
+          "type": "Documentation",
+          "url": "https://imaginode.ai/en/docs"
+        },
+        {
+          "type": "x-mcp-transport",
+          "value": "streamable-http"
+        }
+      ],
+      "contact": [
+        {
+          "email": "imaginode.ai@gmail.com"
+        }
+      ]
+    }
+  ],
+  "maintainers": [
+    {
+      "FN": "Frank Houbre",
+      "email": "imaginode.ai@gmail.com",
+      "url": "https://imaginode.ai",
+      "organization": "BUSINESSDYNAMITE"
+    }
+  ],
+  "common": [
+    {
+      "type": "Documentation",
+      "url": "https://imaginode.ai/en/docs"
+    },
+    {
+      "type": "Pricing",
+      "url": "https://imaginode.ai/en/pricing",
+      "value": "credit packs from 7 USD, credits never expire"
+    },
+    {
+      "type": "Blog",
+      "url": "https://imaginode.ai/en/blog"
+    },
+    {
+      "type": "PrivacyPolicy",
+      "url": "https://imaginode.ai/en/privacy"
+    },
+    {
+      "type": "TermsOfService",
+      "url": "https://imaginode.ai/en/terms"
+    },
+    {
+      "type": "x-llms-txt",
+      "url": "https://imaginode.ai/llms.txt"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+generated: '2026-09-03'
+method: searched
+source: https://imaginode.ai/en/docs/api-mcp
+limit_count: 1
+limits:
+  - scope: per-api-key
+    surface: POST /api/generate and MCP generation tools (REST API and MCP server share the limit)
+    limit: 10 generations
+    window: 1 minute
+    burst: not documented
+    note: >-
+      Stated in the API docs as a deliberate runaway-agent guard: "each key is limited to
+      10 generations per minute: plenty for real work, not enough to drain a balance by
+      accident if an agent runs away." An account may hold at most 5 active API keys.
+response_headers: []
+response_headers_note: >-
+  No rate-limit response headers (X-RateLimit-*, RateLimit-*, Retry-After) are documented,
+  and the status code returned on exhaustion is not documented.
+exhaustion_status: not documented

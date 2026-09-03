@@ -1,0 +1,227 @@
+# Imaginode
+
+> Imaginode (https://imaginode.ai) is a browser-based AI creation studio: users generate images, videos and voice-overs on a node canvas by wiring boxes together: text, image, video, camera, reference, style and audio nodes. 74 AI models (Flux, Seedream, Recraft, Kling, Seedance, Veo, GPT-5, Claude, Gemini, Kimi, OpenAI TTS…) are available on a single account with shared credits. Nothing to install; generation runs server-side, and it works fully on mobile browsers. The interface is available in 14 languages (French by default, then English, Spanish, German, Portuguese, Indonesian, Japanese, Korean, Chinese, Arabic, Hindi, Russian, Turkish and Hebrew). A public REST API and a hosted MCP server expose the same pipeline, described in https://imaginode.ai/apis.json.
+
+## How pricing works
+
+1 credit ≈ $0.012 ($0.01 in the euro area). The exact cost of every generation is displayed on the Generate button BEFORE clicking. Failed generations (provider crash or timeout) are refunded automatically within seconds. An image costs 1–7 credits; a 5-second 720p video costs roughly 26–60 credits depending on the model; voice-over costs 5 credits per 1,000 characters.
+
+### Subscriptions
+- Starter: $17/month (€13 in the euro area), excl. tax, for 900 credits
+- Creator: $55/month (€42 in the euro area), excl. tax, for 3,100 credits
+- Studio: $188/month (€145 in the euro area), excl. tax, for 10,500 credits
+
+### One-time top-ups
+- 300 credits: $7 (€5 in the euro area), one-time, no subscription
+- 1,000 credits: $20 (€15 in the euro area), one-time, no subscription
+- 2,000 credits: $38 (€29 in the euro area), one-time, no subscription
+- 3,000 credits: $55 (€42 in the euro area), one-time, no subscription
+- 5,000 credits: $90 (€69 in the euro area), one-time, no subscription
+- 10,000 credits: $175 (€135 in the euro area), one-time, no subscription
+
+Credit lifetime: subscription credits cover the monthly period paid for and reset to the plan allowance at renewal (unused ones expire, as at Higgsfield or Runway). Credits bought as one-time top-ups, trial credits and referral bonuses never expire. Generations spend subscription credits first.
+
+Cancel anytime from the dashboard.
+
+## Key features
+
+- Node canvas: each creation step is a box wired to others; every node keeps its generation history; auto-save; ready-made templates.
+- AI assistant (1 credit/message) that builds complete workflows added to the canvas in one click.
+- Character consistency via Reference nodes: @mention a character in any prompt and its photos are attached (Seedream for images, Seedance for video, up to 9+ reference images).
+- Camera node: framing, lens (mm), aperture, angle and movement written into the prompt like a cinematographer would.
+- Magic wand (1 credit): rewrites any prompt into rich, optimized English while preserving @mentions.
+- Voice-over node: OpenAI TTS HD, 6 voices (male/female), adjustable speed, MP3 download.
+- Image editing: one click creates a Flux Kontext node pre-wired to any image.
+
+## Models
+
+### Image models (18)
+- [Flux Schnell](https://imaginode.ai/models/flux-schnell): from 1 credits
+- [Flux 2 Klein](https://imaginode.ai/models/flux-dev): from 3 credits
+- [Flux 2 Pro](https://imaginode.ai/models/flux-2): from 5 credits
+- [Flux Pro 1.1](https://imaginode.ai/models/flux-pro): from 6 credits
+- [Flux Kontext](https://imaginode.ai/models/flux-kontext): from 6 credits
+- [Seedream 5 Lite](https://imaginode.ai/models/seedream-5): from 5 credits
+- [Seedream 5 Pro](https://imaginode.ai/models/seedream-5-pro): from 5 credits
+- [Flux 2 Max](https://imaginode.ai/models/flux-2-max): from 10 credits
+- [Nano Banana](https://imaginode.ai/models/nano-banana): from 6 credits
+- [Nano Banana 2](https://imaginode.ai/models/nano-banana-2): from 10 credits
+- [Nano Banana Pro](https://imaginode.ai/models/nano-banana-pro): from 19 credits
+- [GPT Image 2](https://imaginode.ai/models/gpt-image-2): from 8 credits
+- [Recraft V4.1](https://imaginode.ai/models/recraft): from 5 credits
+- [Muse Image](https://imaginode.ai/models/muse-image): from 2 credits
+- [Grok Imagine](https://imaginode.ai/models/grok-image): from 3 credits
+- [GPT Image Mini](https://imaginode.ai/models/gpt-image): from 2 credits
+- [Topaz Precision](https://imaginode.ai/models/upscale-image): from 12 credits
+- [Topaz Bloom 2](https://imaginode.ai/models/upscale-image-creative): from 23 credits
+
+### Video models (16)
+- [Grok Imagine Video](https://imaginode.ai/models/grok-video): from 9 credits
+- [Kling 2.5 Turbo](https://imaginode.ai/models/kling-std): from 26 credits
+- [MiniMax H3](https://imaginode.ai/models/hailuo-std): from 78 credits
+- [MiniMax H3 Max](https://imaginode.ai/models/hailuo-max): from 48 credits
+- [Wan 2.7](https://imaginode.ai/models/wan): from 24 credits
+- [Wan 3.0](https://imaginode.ai/models/wan-3): from 24 credits
+- [Wan 3.0 Prime](https://imaginode.ai/models/wan-3-prime): from 34 credits
+- [Seedance 2.0 Fast](https://imaginode.ai/models/seedance-mini): from 39 credits
+- [Seedance 2.0](https://imaginode.ai/models/seedance-2): from 48 credits
+- [Kling V3](https://imaginode.ai/models/kling3-std): from 91 credits
+- [Veo 3.1 Lite](https://imaginode.ai/models/veo31-lite): from 24 credits
+- [Veo 3.1 Fast](https://imaginode.ai/models/veo3-fast): from 72 credits
+- [Seedance 2.5](https://imaginode.ai/models/seedance): from 96 credits
+- [Flux 3 Video](https://imaginode.ai/models/flux-3-video): from 102 credits
+- [ByteDance Upscaler](https://imaginode.ai/models/upscale-video): from 1 credits
+- [Topaz Proteus](https://imaginode.ai/models/upscale-video-pro): from 2 credits
+
+### Language models (20)
+- [GPT-5 (ChatGPT)](https://imaginode.ai/models/gpt-5): from 3 credits
+- [GPT-5 Mini](https://imaginode.ai/models/gpt-5-mini): from 1 credits
+- [GPT-5 Nano](https://imaginode.ai/models/gpt-5-nano): from 1 credits
+- [GPT-4o](https://imaginode.ai/models/gpt-4o): from 3 credits
+- [GPT-4o Mini](https://imaginode.ai/models/gpt-4o-mini): from 1 credits
+- [GPT-4.1](https://imaginode.ai/models/gpt-4-1): from 2 credits
+- [OpenAI o3](https://imaginode.ai/models/o3): from 2 credits
+- [Claude Sonnet 4.5](https://imaginode.ai/models/claude-sonnet): from 4 credits
+- [Claude Haiku 4.5](https://imaginode.ai/models/claude-haiku): from 2 credits
+- [Gemini 2.5 Pro](https://imaginode.ai/models/gemini-pro): from 3 credits
+- [Gemini 3.5 Flash](https://imaginode.ai/models/gemini-flash): from 3 credits
+- [Gemini 2.5 Flash Lite](https://imaginode.ai/models/gemini-flash-lite): from 1 credits
+- [Grok 4.5](https://imaginode.ai/models/grok-4): from 2 credits
+- [Llama 4 Maverick](https://imaginode.ai/models/llama-4-maverick): from 1 credits
+- [Llama 4 Scout](https://imaginode.ai/models/llama-4-scout): from 1 credits
+- [DeepSeek R1](https://imaginode.ai/models/deepseek-r1): from 2 credits
+- [DeepSeek V3.2](https://imaginode.ai/models/deepseek-v3): from 1 credits
+- [Kimi K2.5](https://imaginode.ai/models/kimi-k2): from 1 credits
+- [Mistral Large 3](https://imaginode.ai/models/mistral-large): from 1 credits
+- [GLM-5](https://imaginode.ai/models/glm-5): from 1 credits
+
+### Audio models (20)
+- [ElevenLabs v3](https://imaginode.ai/models/eleven-v3): from 7 credits
+- [ElevenLabs Dialogue v3](https://imaginode.ai/models/eleven-dialogue): from 7 credits
+- [ElevenLabs Multilingual v2](https://imaginode.ai/models/eleven-multilingual-v2): from 7 credits
+- [ElevenLabs Turbo v2.5](https://imaginode.ai/models/eleven-turbo-v25): from 4 credits
+- [MiniMax Speech 2.8 HD](https://imaginode.ai/models/minimax-speech-hd): from 7 credits
+- [MiniMax Speech 2.8 Turbo](https://imaginode.ai/models/minimax-speech-turbo): from 5 credits
+- [Grok TTS](https://imaginode.ai/models/grok-tts): from 2 credits
+- [Fish Audio S2.1 Pro](https://imaginode.ai/models/fish-s21): from 2 credits
+- [Fish Audio S2 Pro](https://imaginode.ai/models/fish-s2): from 2 credits
+- [Fish Audio S1](https://imaginode.ai/models/fish-s1): from 2 credits
+- [OpenAI TTS HD](https://imaginode.ai/models/tts-hd): from 3 credits
+- [Qwen3-TTS](https://imaginode.ai/models/qwen3-tts): from 7 credits
+- [ElevenLabs Sound Effects](https://imaginode.ai/models/eleven-sfx): from 7 credits
+- [ElevenLabs Music](https://imaginode.ai/models/eleven-music): from 84 credits
+- [Seed Audio 1.0](https://imaginode.ai/models/seed-audio): from 34 credits
+- [DeepFilterNet 3](https://imaginode.ai/models/audio-cleanup): from 11 credits
+- [ElevenLabs Audio Isolation](https://imaginode.ai/models/audio-isolate): from 18 credits
+- [SAM Audio](https://imaginode.ai/models/audio-extract): from 18 credits
+- [Demucs](https://imaginode.ai/models/audio-stems): from 8 credits
+- [ElevenLabs Voice Changer](https://imaginode.ai/models/audio-voice-change): from 54 credits
+
+## Tools
+
+Each page below shows a complete node workflow (the real template), what it produces, the models wired in, the credit cost of one full run, common mistakes and a FAQ. Available in French, English, Spanish, German and Portuguese: replace /en/ with /es/, /de/, /pt/, or drop it for French.
+
+- [Try on a haircut with AI](https://imaginode.ai/en/tools/changer-de-coiffure-ia): The same portrait edited three times by Flux Kontext, a short bob, long waves, a copper colour, with nothing else changing. The full workflow, no account needed.
+- [AI logo generator: four directions from one brief](https://imaginode.ai/en/tools/generateur-de-logo-ia): One brief, four logos generated by Recraft in four directions, emblem, wordmark, pictogram, badge, and the chosen logo placed on a shopfront. The full workflow, no account needed.
+- [Bring an old photo to life with AI](https://imaginode.ai/en/tools/animer-une-vieille-photo-ia): A damaged print restored and colourised by Flux Kontext, then set in motion for five seconds by Kling V3: a blink, a smile, a slight turn of the head. The full workflow, no account needed.
+- [Turn a photo into anime, cartoon or 3D with AI](https://imaginode.ai/en/tools/photo-en-anime-ia): A selfie redrawn three times by Flux Kontext, as Japanese anime, as 2D cartoon and as a 3D animated film character, the face staying recognisable. The full workflow, no account needed.
+- [Change your voice with AI](https://imaginode.ai/en/tools/changer-sa-voix-ia): A line spoken by a male voice, replayed by ElevenLabs Voice Changer in three voices, a woman, a young man, an older man, with the original rhythm and intonation. The full workflow, no account needed.
+- [Split the vocals from a song with AI](https://imaginode.ai/en/tools/separer-voix-chanson-ia): A 30-second song split into four stems by Demucs, vocals, drums, bass and the rest, with the same song run through vocal isolation next to it. The full workflow, no account needed.
+- [Clean up a recording with AI](https://imaginode.ai/en/tools/nettoyer-un-enregistrement-ia): A voice memo dictated on a noisy terrace, run through both noise removers of the catalogue side by side, DeepFilterNet 3 and ElevenLabs Audio Isolation. The full workflow, no account needed.
+- [AI voice-over: the same text read by three engines](https://imaginode.ai/en/tools/voix-off-ia): The same script read by three speech synthesis engines, ElevenLabs v3, MiniMax Speech 2.8 HD and OpenAI TTS HD, to choose your voice-over by ear. The full workflow, no account needed.
+- [AI meme video: memes come alive in your street](https://imaginode.ai/en/tools/video-meme-ia): Two selfies, a photo of your street and your meme images: a 30-second vlog in one single take where memes sip coffee at the terrace and cross at the light behind you. The full workflow is visible here without an account.
+- [Sharpen a video with AI](https://imaginode.ai/en/tools/rendre-video-nette-ia): A camcorder shot 480 pixels wide, enlarged to 1080p by both video upscalers side by side. The full workflow, no account needed.
+- [Add sound to a video with AI](https://imaginode.ai/en/tools/sonoriser-une-video-ia): A silent shot, an ambience bed and a music bed: the three pieces are generated here, the montage assembles them. The full workflow, no account needed.
+- [Sharpen a photo with AI](https://imaginode.ai/en/tools/rendre-photo-nette-ia): A blurred, low-resolution photo enlarged four times by both upscalers side by side: the faithful one and the creative one. The full workflow, no account needed.
+- [Declutter a room with AI](https://imaginode.ai/en/tools/desencombrer-une-piece-ia): A photo of a lived-in interior loses its boxes, laundry and dishes, then catches up on the light. The flaws of the property stay visible. The full workflow, no account needed.
+- [Remove an object or a person from a photo with AI](https://imaginode.ai/en/tools/supprimer-objet-photo-ia): The background figures disappear, then the fixed object spoiling the frame, and the scene closes behind them with no blurred patch. The full workflow, no account needed.
+- [Extend an image with AI](https://imaginode.ai/en/tools/etendre-une-image-ia): The same wide shot gives a vertical story and a square for the feed, without cropping and without cutting the subject. The full workflow, no account needed.
+- [Furnish an empty room with AI](https://imaginode.ai/en/tools/meubler-piece-vide-ia): The photo of an empty property, furnished in three styles at once: Scandinavian, family, home office. The building itself stays put, only the furniture changes. The full workflow, no account needed.
+- [Turn a sketch into a photo with AI](https://imaginode.ai/en/tools/croquis-en-photo-ia): Your line drawing becomes a studio photograph, then a second finish, then the video that takes it from paper to object. The full workflow, no account needed.
+- [Listing photos: from kerbside snapshot to a picture that sells](https://imaginode.ai/en/tools/photo-annonce-vente-ia): Drop in the shot you took with your phone: the clutter goes, the light is redone, the number plate stays blank, and what you are selling does not move a pixel. Three listing photos out, workflow visible without an account.
+- [Make a cinematic ad with AI](https://imaginode.ai/en/tools/pub-cinematique-ia): Your product filmed like an ad: a Camera node at 85 mm and f/1.4, a slow dolly in, and eight seconds of 1080p video with sound. The full workflow, no account needed.
+- [Age your face with AI](https://imaginode.ai/en/tools/vieillir-son-visage-ia): Your photo today, the face you will have twenty years from now, then forty, and the video that plays the ageing between the two. The full workflow, no account needed.
+- [Squish effect: the object that squashes like jelly](https://imaginode.ai/en/tools/effet-squish-ia): One photo of an object is enough: the sneaker squishes like memory foam, in extreme close-up, with the compression sound generated inside the video. The full workflow is visible here without an account.
+- [Fashion transition: the outfit that melts into liquid](https://imaginode.ai/en/tools/transition-mode-ia): The outfit melts from top to bottom into glossy liquid, and the new one solidifies in its place. The transition of fashion reels, computed between a first and a last frame. Full demo visible without an account.
+- [AI documentary video in cut-paper style](https://imaginode.ai/en/tools/video-documentaire-ia): Build the one minute documentaries that loop across social feeds: cut-paper sets, a new shot every two seconds, generated voice-over. The whole workflow is visible here, no account needed.
+- [Clay animation with AI](https://imaginode.ai/en/tools/animation-pate-a-modeler-ia): Create those children's videos in modelling clay: sculpted characters, plain background, a cut every two and a half seconds. The character sheet keeps the same hero from first shot to last.
+- [Turn your child's drawing into a character](https://imaginode.ai/en/tools/transformer-dessin-enfant-ia): Your child's felt-tip monster becomes a figurine on a studio background, then it moves. The instruction is one sentence: correct nothing, keep the uneven legs and the crooked eyes.
+- [AI drone video: draw the flight path](https://imaginode.ai/en/tools/video-drone-ia): Draw a red line on a photo, the model reads it as a drone flight path and flies along it. Ten seconds of aerial move from a single still, with no drone and no flight clearance.
+- [Put yourself in a film with AI](https://imaginode.ai/en/tools/se-mettre-en-scene-ia): Three photos of you are enough to end up pressed against a rock while a cyclops hunts for you. The Camera node shoots the still and the video through the same lens.
+- [Manga fight played on stage with AI](https://imaginode.ai/en/tools/combat-manga-ia): A manga fight played by real actors on a vast stage, filmed from the crowd, phones up and pyrotechnics firing. Everything is photographic, the manga lives in the costumes.
+- [Faceless YouTube video](https://imaginode.ai/en/tools/video-youtube-sans-visage): The full pipeline of an explainer channel: a subject in, a script written by a language model, a voice over, three shots and a ten second edit. Visible here without an account.
+- [Create a comic strip page with AI](https://imaginode.ai/en/tools/bande-dessinee-ia): Four panels telling one scene, with the same face in all four. The reference sheet holds the character, the art direction holds the inking. The workflow is visible here, without an account.
+- [Talking AI avatar](https://imaginode.ai/en/tools/avatar-parlant-ia): A synthetic presenter says your script to camera, with their voice. Veo 3.1 generates image and speech together, so the lips land right. The workflow is visible here, without an account.
+- [Turn your pet into a character with AI](https://imaginode.ai/en/tools/animal-de-compagnie-ia): The family dog becomes a court portrait, then a scene, then it blinks. The reference sheet keeps its own muzzle. The workflow is visible here, without an account.
+- [Coloring page generator](https://imaginode.ai/en/tools/coloriage-a-imprimer-ia): The same character on three pages: large shapes for toddlers, a full page for older children, a dense plate for adults. Black line, zero grey. The workflow is visible here, without an account.
+- [AI tattoo generator](https://imaginode.ai/en/tools/tatouage-ia): The design is drawn as pure line work, then placed on your skin, where you want it and following the curve of the arm. Two inputs into one node. The workflow is visible here, without an account.
+- [Clothing photography without a model](https://imaginode.ai/en/tools/mannequin-invisible-ia): The garment shot flat comes back worn by a body you cannot see: front, back and collar detail, in the same white studio. The workflow is visible here, without an account.
+- [AI food photography for restaurants](https://imaginode.ai/en/tools/photo-culinaire-ia): The phone snapshot taken in the dining room becomes a menu photograph, then a vertical story, then a shot of rising steam. The dish itself does not change. Visible here without an account.
+- [AI YouTube thumbnail maker](https://imaginode.ai/en/tools/miniature-youtube): Create clickable YouTube thumbnails with your own face: one creator card, your video title, and two 16:9 thumbnails generated side by side so you can compare before publishing.
+- [AI product photography: the full e-commerce shoot](https://imaginode.ai/en/tools/photo-produit-ia): Turn 2 or 3 photos of your product into a complete shoot: white-background packshot, three-quarter view, macro detail, lifestyle scene, plus a studio rotation video.
+- [AI UGC video generator](https://imaginode.ai/en/tools/video-ugc-ia): Create UGC videos without a shoot: a consistent virtual creator holds your product and presents it to camera, voice included, in 9:16 ready for TikTok and Reels.
+- [AI photoshoot: a fashion shoot without a studio](https://imaginode.ai/en/tools/photoshoot-ia): Produce a full fashion shoot from one piece: the same model in several poses, a shared art direction, a fabric close-up and a runway walk video.
+- [Change a photo background with AI](https://imaginode.ai/en/tools/changer-fond-photo-ia): Import a photo, describe the new setting: the AI cuts out the subject and places it on a white studio background or in a fully styled scene, without touching the product.
+- [Renovate a room in a photo with AI](https://imaginode.ai/en/tools/home-staging-ia): Turn the photo of a dated room into a renovated interior, then generate the transformation video between the before and the after: the tool for property listings that stop the scroll.
+- [Virtual try-on: have AI wear your garment](https://imaginode.ai/en/tools/essayage-virtuel-ia): One person card, one garment card: the AI generates the piece worn in a realistic photo, then animates it into a runway video. The tool for fashion shops that want worn shots without a shoot.
+- [AI professional headshots from your selfies](https://imaginode.ai/en/tools/portrait-professionnel-ia): Turn 2 or 3 selfies into studio portraits: a corporate version on a neutral backdrop and a bright office version, same person and the same polished light.
+- [Restore an old photo with AI](https://imaginode.ai/en/tools/restaurer-vieille-photo-ia): Repair the scratches, stains and creases of an old print and colorize it with one instruction, then generate the restoration video where the photo gradually comes back to life.
+- [AI poster maker](https://imaginode.ai/en/tools/affiche-ia): Create a typographic poster from a brief: title, date, venue and art direction are wired into the prompt, and the series extends while keeping the same style.
+
+## Competitor comparisons
+
+35 fact-checked comparison pages against competing AI tools (Midjourney, Runway, Kling, Sora, Leonardo, Higgsfield…). Each page records the competitor's real pricing grid with the date it was verified and a link to the source, then compares it with Imaginode's per-generation credit costs. Same 5 languages as the rest of the site.
+
+- [Imaginode vs Midjourney](https://imaginode.ai/en/vs/midjourney): Midjourney bills subscription GPU hours, Imaginode bills each generation in credits displayed before you click. An honest comparison: pricing, video, models, refunds when a generation fails.
+- [Imaginode vs Runway](https://imaginode.ai/en/vs/runway): Runway bills monthly credits that expire, Imaginode bills per-cent credits that stay once purchased. An honest comparison: price per video, available models, tools, refunds when a generation fails.
+- [Imaginode vs Higgsfield](https://imaginode.ai/en/vs/higgsfield): Higgsfield sells 7-day "unlimited" windows on selected models, Imaginode displays the price of every generation before you click. An honest comparison with dated figures.
+- [Imaginode vs Magnific (ex-Freepik)](https://imaginode.ai/en/vs/magnific): Magnific (ex-Freepik) stacks stock, design and AI into a generalist suite with yearly credits. Imaginode is an AI creation workshop with upfront pricing. An honest, dated comparison.
+- [Imaginode vs Flora](https://imaginode.ai/en/vs/flora): Flora and Imaginode share the same conviction: a creative process should be drawn on a node canvas, not typed into a chat. The dividing line is the business model (seats with included usage versus pay-per-use credits) and the audience. An honest comparison, prices checked on August 16, 2026.
+- [Imaginode vs Sora (OpenAI)](https://imaginode.ai/en/vs/sora): OpenAI shut down the Sora app in April 2026 and deprecated the API. Here is what remains, what it used to cost, and how to get the same job done without a subscription.
+- [Imaginode vs Kling AI](https://imaginode.ai/en/vs/kling): Kling AI sells monthly credits that vanish at the end of the cycle. Imaginode sells the same Kling model per generation, with no subscription. Dated, sourced comparison.
+- [Imaginode vs Google Flow (Veo 3.1)](https://imaginode.ai/en/vs/google-flow): Google Flow sells Veo 3.1 inside Google AI plans from $7.99 to $249.99 a month. Imaginode sells Veo 3.1 per generation, with no subscription. Dated, sourced comparison.
+- [Imaginode vs Leonardo AI](https://imaginode.ai/en/vs/leonardo): Leonardo AI sells monthly tokens with a relaxed mode on its own models. Imaginode sells 48 models by the cent, with no subscription. Dated, sourced comparison.
+- [Imaginode vs HeyGen](https://imaginode.ai/en/vs/heygen): HeyGen makes avatars that talk, billed in credits per minute. Imaginode generates video shots by the cent. Two different jobs, compared honestly.
+- [Imaginode vs Ideogram](https://imaginode.ai/en/vs/ideogram): Ideogram is still the benchmark for legible text inside a generated image. Imaginode covers image, video and voice by the cent. Honest, dated comparison.
+- [Imaginode vs Synthesia](https://imaginode.ai/en/vs/synthesia): Synthesia bills avatar video by the minute, seat by seat. Imaginode bills per generation, with no seats and no minutes. Honest comparison between two jobs.
+- [Imaginode vs Krea AI](https://imaginode.ai/en/vs/krea): Krea sells compute units whose yield swings widely by model. Imaginode shows the exact price of every generation. Dated, sourced comparison.
+- [Imaginode vs Luma Dream Machine](https://imaginode.ai/en/vs/luma): Luma Dream Machine starts at $30 a month for 10,000 non-rolling credits. Imaginode bills every generation by the cent, with no subscription. Dated comparison.
+- [Imaginode vs Canva (Magic Studio)](https://imaginode.ai/en/vs/canva): Canva lays out pages and hands out 500 AI credits shared across every feature. Imaginode manufactures the image and the video by the cent. Honest, dated comparison.
+- [Imaginode vs Pika](https://imaginode.ai/en/vs/pika): Pika starts at $8 a month for 80 credits, roughly one finished 1080p clip. Imaginode bills every video by the cent, with no subscription. Dated comparison.
+- [Imaginode vs Adobe Firefly](https://imaginode.ai/en/vs/firefly): Firefly shares its generative credits with Photoshop and Express inside Adobe's ecosystem. Imaginode sells 48 models by the cent, outside any suite. Dated comparison.
+- [Imaginode vs ComfyUI](https://imaginode.ai/en/vs/comfyui): ComfyUI is free and infinitely configurable, if you have a GPU and time. Imaginode is a ready-made node canvas billed by the cent. Honest comparison.
+- [Imaginode vs Recraft](https://imaginode.ai/en/vs/recraft): Recraft generates true SVG and keeps its free tier public and non-commercial. Imaginode carries Recraft among 48 models, by the cent. Honest, dated comparison.
+- [Imaginode vs Hailuo AI (MiniMax)](https://imaginode.ai/en/vs/hailuo): Hailuo AI changes its price list often: the Standard plan has been listed at $9.99, $12.99 and $14.99. Imaginode prints the price before every click. Dated comparison.
+- [Imaginode vs Descript](https://imaginode.ai/en/vs/descript): Descript edits video by editing its transcript, with two meters to track. Imaginode generates shots by the cent. Honest comparison between two jobs.
+- [Imaginode vs ChatGPT (images)](https://imaginode.ai/en/vs/chatgpt): ChatGPT Plus generates images for $20 a month with unpublished limits. Imaginode gives access to GPT Image 2 and 47 other models by the cent. Dated comparison.
+- [Imaginode vs Civitai](https://imaginode.ai/en/vs/civitai): Civitai hosts thousands of community models and a Buzz currency reworked since 2025. Imaginode keeps a curated catalogue of 48 models, by the cent. Dated comparison.
+- [Imaginode vs PixVerse](https://imaginode.ai/en/vs/pixverse): PixVerse gives 60 credits a day but watermarks the free tier and expires paid credits. Imaginode bills by the cent with no expiry on purchased credits. Dated, sourced comparison.
+- [Imaginode vs Captions (Mirage)](https://imaginode.ai/en/vs/captions): Captions edits and subtitles filmed video, with in-house AI actors. Imaginode generates the shots themselves. Honest comparison between two jobs.
+- [Imaginode vs Figma Weave (ex-Weavy)](https://imaginode.ai/en/vs/figma-weave): Figma bought Weavy and relaunched it as Weave: 150 free credits, $24 a month to start. Imaginode sells the same kind of canvas by the cent. Dated comparison.
+- [Imaginode vs Topaz Labs](https://imaginode.ai/en/vs/topaz): Topaz Labs dropped perpetual licences in late 2025 and sells subscriptions from $19 a month. Imaginode generates images and video by the cent. Dated comparison.
+- [Imaginode vs Vidu](https://imaginode.ai/en/vs/vidu): Vidu offers unlimited off-peak generation and credits valid for 30 days. Imaginode prints the price of each clip and never expires purchased credits. Dated comparison.
+- [Imaginode vs InVideo AI](https://imaginode.ai/en/vs/invideo): InVideo AI bills 80 to 160 credits per generated minute across several separate credit pools. Imaginode bills by the cent in one currency. Dated comparison.
+- [Imaginode vs Replicate](https://imaginode.ai/en/vs/replicate): Replicate bills per GPU second, cold starts included, and joined Cloudflare. Imaginode bills per credit with the price shown before the click. Dated comparison.
+- [Imaginode vs Photoroom](https://imaginode.ai/en/vs/photoroom): Photoroom cuts out and stages product photos from $7.50 a month. Imaginode generates the whole scene by the cent. Honest, dated comparison.
+- [Imaginode vs Dreamina (CapCut)](https://imaginode.ai/en/vs/dreamina): Dreamina gives 225 credits a day and lives inside the CapCut ecosystem. Imaginode sells a multi-model canvas at a printed price. Honest, dated comparison.
+- [Imaginode vs Arcads](https://imaginode.ai/en/vs/arcads): Arcads sells AI actors at about $11 a video, with no free tier and no public pricing. Imaginode generates the shots by the cent. Honest, dated comparison.
+- [Imaginode vs fal.ai](https://imaginode.ai/en/vs/fal): fal.ai sells models per API call, with no subscription and credits valid one year. Imaginode sells the same kind of access in a visual canvas. Dated comparison.
+- [Imaginode vs Creatify](https://imaginode.ai/en/vs/creatify): Creatify makes avatar ads from $39 a month, with credits expiring in two months. Imaginode generates shots by the cent, with no expiry on purchased credits. Dated comparison.
+
+## Pages
+
+- [Pricing](https://imaginode.ai/pricing): plans, top-ups and the full list of included models
+- [All AI models](https://imaginode.ai/models): per-model pricing and capabilities
+- [AI tools](https://imaginode.ai/tools): 46 public tool pages, each showing the real workflow in an interactive read-only canvas (list below)
+- [Documentation](https://imaginode.ai/docs): 8 written guides plus a video academy
+- [API & MCP server](https://imaginode.ai/docs/api-mcp): programmatic image/video generation via REST API and an MCP server at https://imaginode.ai/api/mcp (API key from the user profile, same credits as the canvas)
+- [Blog](https://imaginode.ai/blog): 21 in-depth guides (2,500+ words each) on AI image/video creation, prompts, workflows, character consistency, camera direction, costs and mobile creation, available in 5 languages
+- [YouTube academy](https://www.youtube.com/@ImaginodeAi) · [Instagram](https://www.instagram.com/imaginode/) · [TikTok](https://www.tiktok.com/@imaginode)
+
+Full text version (tools and comparisons expanded in a single file): https://imaginode.ai/llms-full.txt
+
+Last generated: 2026-09-03 (this file is rebuilt hourly from the live model registry, pricing tables and content index).
+
+## Company
+
+Imaginode is operated by BUSINESSDYNAMITE. Contact: imaginode.ai@gmail.com.

@@ -1,0 +1,37 @@
+generated: '2026-09-03'
+method: probed
+source: live probes of https://imaginode.ai (registrable domain; all API and docs surfaces share this host)
+note: >-
+  Every /.well-known/ path probed returned the site's HTML 404 shell; no well-known document is
+  served, so no WellKnown pointer is emitted. The one discovery document Imaginode does
+  self-host is an APIs.json index at the domain root (/apis.json, HTTP 200,
+  application/json, specificationVersion 0.18), saved verbatim as
+  well-known/imaginode-apis-json.json and recorded here because it is the provider's own
+  machine-readable API index even though it does not live under /.well-known/.
+hosts:
+  - host: imaginode.ai
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+      - path: /apis.json
+        status: 200
+        file: well-known/imaginode-apis-json.json
+        note: self-hosted APIs.json index (root path, not a /.well-known/ document)
+      - path: /llms.txt
+        status: 200
+        file: llms/imaginode-llms.txt
+        note: root path, saved under llms/ (rebuilt hourly by the provider)

@@ -1,0 +1,53 @@
+generated: '2026-09-03'
+method: searched
+source: https://imaginode.ai/en/pricing
+docs: https://imaginode.ai/llms.txt
+note: >-
+  All generation (canvas, REST API and MCP server) draws on one shared credit balance;
+  1 credit is approximately $0.012 (0.01 EUR in the euro area) and the exact credit cost is
+  returned/displayed before every generation. Failed generations are refunded automatically.
+  Subscription credits reset at renewal (unused ones expire); one-time top-up, trial and
+  referral credits never expire. Generations spend subscription credits first. Prices below
+  verified 2026-09-03 from the provider's own llms.txt (rebuilt hourly from live pricing tables).
+currency: USD
+plan_count: 3
+plans:
+  - name: Starter
+    price: 17
+    currency: USD
+    price_eur: 13
+    billing_period: monthly
+    included_quota: 900 credits/month
+    notes: excl. tax; credits reset to plan allowance at renewal
+  - name: Creator
+    price: 55
+    currency: USD
+    price_eur: 42
+    billing_period: monthly
+    included_quota: 3100 credits/month
+    notes: excl. tax
+  - name: Studio
+    price: 188
+    currency: USD
+    price_eur: 145
+    billing_period: monthly
+    included_quota: 10500 credits/month
+    notes: excl. tax
+one_time_topups:
+  - {credits: 300, price: 7, currency: USD, price_eur: 5}
+  - {credits: 1000, price: 20, currency: USD, price_eur: 15}
+  - {credits: 2000, price: 38, currency: USD, price_eur: 29}
+  - {credits: 3000, price: 55, currency: USD, price_eur: 42}
+  - {credits: 5000, price: 90, currency: USD, price_eur: 69}
+  - {credits: 10000, price: 175, currency: USD, price_eur: 135}
+metering:
+  unit: credit
+  usd_per_credit: 0.012
+  eur_per_credit: 0.01
+  examples:
+    - an image costs 1-7 credits
+    - a 5-second 720p video costs roughly 26-60 credits depending on the model
+    - voice-over costs 5 credits per 1,000 characters
+  machine_readable_price_list: https://imaginode.ai/api/models
+overage: none (buy one-time top-ups or upgrade; no automatic overage billing documented)
+cancellation: cancel anytime from the dashboard

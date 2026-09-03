@@ -1,0 +1,63 @@
+generated: '2026-09-03'
+method: searched
+source: https://imaginode.ai/en/docs/api-mcp
+note: >-
+  Imaginode publishes no OpenAPI; these cross-cutting semantics are read from the API & MCP
+  documentation and from live probes of the three documented REST endpoints. The write
+  surface is exactly one operation (POST /api/generate) plus its MCP tool equivalents.
+authentication:
+  style: bearer API key (imk_ prefix) in the Authorization header
+  artifact: authentication/imaginode-authentication.yml
+idempotency:
+  coverage: none
+  note: >-
+    No idempotency mechanism (Idempotency-Key header or equivalent) is documented for
+    POST /api/generate or the MCP generation tools. A retried request starts and bills a
+    new generation. The 10-generations-per-minute per-key limit is the only documented
+    guard against a runaway or retrying agent.
+pagination:
+  style: none
+  note: GET /api/models returns the full model catalog in one response; no paginated endpoints are documented.
+async_pattern:
+  style: polling
+  note: >-
+    POST /api/generate returns requestId, cost and the new credit balance immediately;
+    poll GET /api/generate/status?requestId=... (states: running, completed with output
+    URLs, failed with refund). Docs recommend polling every 30 seconds for video; expect
+    1-5 minutes typically, up to 30 for long generations. MCP generate_image waits inline
+    and returns the image URL directly; generate_video returns a request_id for polling.
+cost_transparency:
+  note: >-
+    The credit cost of a generation is returned at launch, before the result. GET /api/models
+    (unauthenticated) carries the per-model credit price list.
+error_envelope:
+  shape: '{"error": "<message>"}'
+  note: 'Observed on live 401 responses: {"error": "Non authentifie"} (messages may be localized in French). See errors/imaginode-problem-types.yml.'
+rate_limit_signaling:
+  documented_limit: 10 generations per minute per API key
+  headers: none documented
+  artifact: rate-limits/imaginode-rate-limits.yml
+versioning:
+  style: none documented
+  note: No API versioning, deprecation policy or changelog is published for the API surface.
+request_tracing:
+  note: No request-id response header is documented; requestId identifies generation jobs, not HTTP requests.
+reversibility:
+  grade: none
+  write_surfaces:
+    - operation: POST /api/generate (and MCP generate_image / generate_video)
+      reversal: none
+      window: null
+      note: >-
+        No cancel, void or undo operation is documented for a started generation; a launched
+        job runs to completion or failure. The provider automatically refunds credits when a
+        generation fails (provider crash or timeout, refunded within seconds) - this is a
+        provider-initiated refund on failure, not a caller-invoked reversal, so no
+        reversibility credit is claimed.
+      docs: https://imaginode.ai/en/docs/api-mcp
+dry_run_mode:
+  supported: none documented
+  note: >-
+    No dry-run or test mode exists, but the exact credit cost is displayed/returned before
+    every generation, and GET /api/models exposes the full price list without authentication -
+    an agent can compute cost before committing.

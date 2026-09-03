@@ -1,0 +1,31 @@
+generated: '2026-09-03'
+method: probed
+source: live unauthenticated probes of https://imaginode.ai/api/* + https://imaginode.ai/en/docs/api-mcp
+format: json-error-envelope
+note: >-
+  No OpenAPI or error reference is published; RFC 9457 problem+json is not used. The API
+  returns a plain JSON envelope {"error": "<message>"} with messages localized (French
+  observed on unauthenticated requests). Generation-level failures are reported through the
+  job status (failed) rather than an HTTP error, and failed generations are automatically
+  refunded within seconds.
+envelope:
+  field: error
+  content_type: application/json
+errors:
+  - status: 401
+    error: Non authentifie
+    condition: missing or invalid API key on POST /api/generate or GET /api/generate/status
+    evidence:
+      probed: '2026-09-03'
+      urls:
+        - 'POST https://imaginode.ai/api/generate -> 401 {"error": "Non authentifie"}'
+        - 'GET https://imaginode.ai/api/generate/status?requestId=test -> 401 {"error": "Non authentifie"}'
+    remediation: >-
+      create an API key in the profile ("API keys" section) and send it as
+      "Authorization: Bearer imk_..."
+job_failure:
+  channel: GET /api/generate/status returns status failed (with refund) rather than an HTTP error
+  remediation: failures (provider crash or timeout) are refunded automatically; retry or switch model
+undocumented:
+  - the status code and body returned when the 10 generations/minute key limit is exhausted
+  - validation error shapes for bad model keys or malformed generation options
