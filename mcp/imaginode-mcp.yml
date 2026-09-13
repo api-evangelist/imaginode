@@ -2,57 +2,72 @@ generated: '2026-09-03'
 method: probed
 source: https://imaginode.ai/api/mcp (live tools/list) + https://imaginode.ai/en/docs/api-mcp
 name: Imaginode MCP Server
-description: >-
-  Official hosted MCP server exposing Imaginode's generation pipeline (images, video, model
-  catalog, job status) to any MCP client over Streamable HTTP. Stateless; billed against the
-  connected account's shared credit balance at the same per-generation prices as the canvas.
-  tools/list answers anonymously with full inputSchemas; tool calls require an account API key
-  (imk_ prefix) sent as "Authorization: Bearer imk_...". Each key is limited to 10 generations
-  per minute and failed generations are refunded automatically.
+description: 'Official hosted MCP server exposing Imaginode''s generation pipeline (images, video, model
+  catalog, job status) to any MCP client over Streamable HTTP. Stateless; billed against the connected
+  account''s shared credit balance at the same per-generation prices as the canvas. tools/list answers
+  anonymously with full inputSchemas; tool calls require an account API key (imk_ prefix) sent as "Authorization:
+  Bearer imk_...". Each key is limited to 10 generations per minute and failed generations are refunded
+  automatically.'
 deployment:
   mode: remote
   endpoint: https://imaginode.ai/api/mcp
   auth: api-key
   verified: probed
+  probe_prior: (never probed)
+  probe: live
+  probe_why: live
+  checked: '2026-09-11'
+  source: claimed-backlog re-probe 2026-09-11
 transport: streamable-http
 status: official
 client_setup:
-  claude_code: 'claude mcp add --transport http imaginode https://imaginode.ai/api/mcp --header "Authorization: Bearer your-key"'
+  claude_code: 'claude mcp add --transport http imaginode https://imaginode.ai/api/mcp --header "Authorization:
+    Bearer your-key"'
   note: In Claude.ai or Cursor, add a custom connector with the same address and the same header.
 tools:
-  - name: list_models
-    title: List Imaginode models
-    description: >-
-      List the available AI models with their kind (image, video), default cost in credits
-      (1 credit = $0.012, or 0.01 EUR when billed in euros) and billable options.
-    parameters: [kind]
-  - name: generate_image
-    title: Generate an image
-    description: >-
-      Generate an image from a text prompt (optionally with input images for editing or
-      reference). Waits for the result and returns the image URL. Costs credits; failures
-      are refunded.
-    parameters: [prompt, model, image_urls, aspect_ratio]
-    required: [prompt]
-  - name: generate_video
-    title: Generate a video
-    description: >-
-      Start a video generation from a text prompt (optionally with a start image). Returns
-      immediately with a request_id and the cost in credits; poll get_generation_status every
-      30 seconds until it completes.
-    parameters: [prompt, model, image_url, duration, resolution, aspect_ratio, audio]
-    required: [prompt]
-  - name: get_generation_status
-    title: Get generation status
-    description: >-
-      Check a generation started with generate_video (or a generate_image that timed out).
-      Returns running, completed (with output URLs) or failed (refunded).
-    parameters: [request_id]
-    required: [request_id]
+- name: list_models
+  title: List Imaginode models
+  description: List the available AI models with their kind (image, video), default cost in credits (1
+    credit = $0.012, or 0.01 EUR when billed in euros) and billable options.
+  parameters:
+  - kind
+- name: generate_image
+  title: Generate an image
+  description: Generate an image from a text prompt (optionally with input images for editing or reference).
+    Waits for the result and returns the image URL. Costs credits; failures are refunded.
+  parameters:
+  - prompt
+  - model
+  - image_urls
+  - aspect_ratio
+  required:
+  - prompt
+- name: generate_video
+  title: Generate a video
+  description: Start a video generation from a text prompt (optionally with a start image). Returns immediately
+    with a request_id and the cost in credits; poll get_generation_status every 30 seconds until it completes.
+  parameters:
+  - prompt
+  - model
+  - image_url
+  - duration
+  - resolution
+  - aspect_ratio
+  - audio
+  required:
+  - prompt
+- name: get_generation_status
+  title: Get generation status
+  description: Check a generation started with generate_video (or a generate_image that timed out). Returns
+    running, completed (with output URLs) or failed (refunded).
+  parameters:
+  - request_id
+  required:
+  - request_id
 tool_schemas: mcp/imaginode-mcp-tools.json
 x-evidence:
   fetched: '2026-09-03'
   url: https://imaginode.ai/api/mcp
-  request: 'POST tools/list (anonymous)'
+  request: POST tools/list (anonymous)
   http_status: 200
   content_type: application/json
