@@ -8,6 +8,15 @@ created: '2026-09-03'
 modified: '2026-09-03'
 specificationVersion: '0.21'
 tags:
+- Artificial Intelligence
+- Image-Generation
+- Video Generation
+- Text-to-Speech
+- MCP
+- Generative AI
+- LLM
+- Creative Tools
+tags_raw:
 - ai
 - image generation
 - video generation
@@ -24,6 +33,15 @@ apis:
   humanURL: https://imaginode.ai/docs/api-mcp
   baseURL: https://imaginode.ai
   tags:
+  - Artificial Intelligence
+  - Image-Generation
+  - Video Generation
+  - Text-to-Speech
+  - MCP
+  - Generative AI
+  - LLM
+  - Creative Tools
+  tags_raw:
   - ai
   - image generation
   - video generation
@@ -46,6 +64,15 @@ apis:
   humanURL: https://imaginode.ai/docs/api-mcp
   baseURL: https://imaginode.ai/api/mcp
   tags:
+  - Artificial Intelligence
+  - Image-Generation
+  - Video Generation
+  - Text-to-Speech
+  - MCP
+  - Generative AI
+  - LLM
+  - Creative Tools
+  tags_raw:
   - ai
   - image generation
   - video generation
