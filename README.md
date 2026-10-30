@@ -1,4 +1,4 @@
-# Imaginode (imaginode)
+# Imaginode
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -65,3 +65,109 @@
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
 Browser-based AI creation studio with a node canvas for generating images, videos, voice-overs and LLM outputs. Provides a REST API, a hosted MCP server, and an llms.txt for programmatic and agent-based generation using a shared credit balance.
+
+**Areas:** Artificial Intelligence · Image Generation · Video Generation · Text-to-Speech · MCP · Generative AI · LLM · Creative Tools
+
+## Imaginode on APIs.io
+
+Everything profiled for Imaginode is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/imaginode/](https://apis.io/providers/imaginode/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Imaginode REST API](https://apis.io/apis/imaginode/imaginode-rest-api/) — REST API to list models and launch/track image and video generations. Endpoints: GET /api/models (unauthenticated catalog & pricing), POST /api/generate,…
+- [Imaginode MCP Server](https://apis.io/apis/imaginode/imaginode-mcp-server/) — Hosted MCP server (Streamable HTTP transport) exposing four tools: list_models, generate_image, generate_video, get_generation_status. Authenticated via…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [mcp](https://apis.io/servers/imaginode/mcp/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Imaginode Authentication](https://apis.io/security/imaginode/imaginode-authentication/)
+- [Imaginode Domain Security](https://apis.io/security/imaginode/imaginode-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Imaginode Plans Pricing](https://apis.io/plans/imaginode/imaginode-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Imaginode Rate Limits](https://apis.io/rate-limits/imaginode/imaginode-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://imaginode.ai)
+- [Documentation](https://imaginode.ai/en/docs)
+- [Pricing](https://imaginode.ai/en/pricing)
+- [Blog](https://imaginode.ai/en/blog)
+- [Terms of service](https://imaginode.ai/en/legal/terms)
+- [Privacy policy](https://imaginode.ai/en/legal/privacy)
+
+## API Evangelist rating
+
+**Kin Score 29.6** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.7 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 31.0 |
+| Access clarity | 69.7 |
+
+**Agent readiness 16.5** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 18.2** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/imaginode/](https://apis.io/providers/imaginode/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Imaginode: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/imaginode/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
